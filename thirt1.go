@@ -8,4 +8,5 @@ func Today(channel chan bool){
 func main() {
 	channel := make(chan bool)
 	go Today(channel)
+	<-channel
 }
