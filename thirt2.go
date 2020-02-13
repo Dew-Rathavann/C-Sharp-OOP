@@ -7,7 +7,7 @@ func sum(nums ...int){
   for _, num := range nums {
 		total += num
 	}
-  
+  fmt.Println(total)
 }
 
 func main() {
