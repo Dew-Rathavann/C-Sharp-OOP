@@ -14,4 +14,5 @@ func main() {
 			fmt.Sprint(strings.ToLower(text[i]))
 		}
 	}
+	fmt.Println(text)
 }
