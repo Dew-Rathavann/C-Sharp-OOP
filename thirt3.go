@@ -9,4 +9,5 @@ func main() {
 	txt.WriteString("my lucky day")
 	fmt.Println(txt.String())
 	fmt.Println(strings.Contains(txt.String(), "get"))
+	fmt.Println(strings.Count(txt.String(), "a"))
 }
