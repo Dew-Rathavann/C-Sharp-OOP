@@ -4,5 +4,6 @@ import (
 	"strings"
 )
 func main() {
-  var txt strings.Builder
+	var txt strings.Builder
+	txt.WriteString("Today is not ")
 }
