@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 func Today(channel chan bool){
-	fmt.Println("Monday")
+	fmt.Println("Tuesday")
 	channel<-true
 }
 func main() {
