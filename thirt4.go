@@ -4,5 +4,5 @@ import (
 	"strings"
 )
 func main() {
-
+	var text string
 }
