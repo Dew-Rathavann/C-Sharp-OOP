@@ -6,5 +6,5 @@ func Today(channel chan bool){
 	channel<-true
 }
 func main() {
-	
+	channel := make(chan bool)
 }
