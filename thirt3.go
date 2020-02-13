@@ -8,4 +8,5 @@ func main() {
 	txt.WriteString("Today is not ")
 	txt.WriteString("my lucky day")
 	fmt.Println(txt.String())
+	fmt.Println(strings.Contains(txt.String(), "get"))
 }
