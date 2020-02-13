@@ -6,4 +6,5 @@ import (
 func main() {
 	var text string
 	fmt.Print("Enter text: ")
+	fmt.Scan(&text)
 }
