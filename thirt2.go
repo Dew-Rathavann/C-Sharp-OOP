@@ -11,5 +11,6 @@ func sum(nums ...int){
 }
 
 func main() {
-
+	sum(1, 2)
+	sum(1, 2, 3)
 }
