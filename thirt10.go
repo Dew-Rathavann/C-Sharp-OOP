@@ -11,5 +11,6 @@ func main() {
   printSlice(numbers1)
   number2 := numbers[:2]
   printSlice(number2)
+  number3 := numbers[2:5]
   
 }
