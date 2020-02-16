@@ -37,4 +37,8 @@ func main() {
 	data := make(chan int)
 	done := make(chan bool)
 	wg := sync.WaitGroup{}
+	for i := 0; i < 100; i++ {
+		wg.Add(1)
+		go produce(data, &wg)
+	}
 }
