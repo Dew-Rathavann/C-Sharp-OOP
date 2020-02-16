@@ -35,4 +35,5 @@ func consume(data chan int, done chan bool){
 }
 func main() {
 	data := make(chan int)
+	done := make(chan bool)
 }
