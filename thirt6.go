@@ -42,4 +42,8 @@ func main() {
 		go produce(data, &wg)
 	}
 	go consume(data, done)
+	go func() {
+		wg.Wait()
+		close(data)
+	}()
 }
