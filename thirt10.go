@@ -10,4 +10,6 @@ func main() {
   numbers1 := make([]int, 0, 5)
   printSlice(numbers1)
   number2 := numbers[:2]
+  printSlice(number2)
+  
 }
