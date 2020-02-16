@@ -26,6 +26,11 @@ func consume(data chan int, done chan bool){
 		}
 	}
 	err = f.Close()
+	if err != nil {
+		fmt.Println(err)
+		done <- false
+		return
+	}
 }
 func main() {
 
