@@ -12,6 +12,13 @@ func produce(data chan int, wg *sync.WaitGroup) {
 }
 func consume(data chan int, done chan bool){
 	f, err := os.Create("concurrent")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	for d := range data {
+		_, err = fmt.Fprintln(f, d)
+	}
 }
 func main() {
 
