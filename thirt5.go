@@ -9,4 +9,11 @@ func main() {
 		fmt.Println(err)
 		return
 	}
+	l, err := f.WriteString("Hello World")
+	if err != nil {
+		fmt.Println(err)
+		f.Close()
+		return
+	}
+	
 }
