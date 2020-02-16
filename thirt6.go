@@ -25,6 +25,7 @@ func consume(data chan int, done chan bool){
 			return
 		}
 	}
+	err = f.Close()
 }
 func main() {
 
