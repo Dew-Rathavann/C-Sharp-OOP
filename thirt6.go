@@ -10,6 +10,9 @@ func produce(data chan int, wg *sync.WaitGroup) {
 	data <- n
 	wg.Done()
 }
+func consume(data chan int, done chan bool){
+	
+}
 func main() {
 
 }
