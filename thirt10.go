@@ -9,5 +9,5 @@ func main() {
   fmt.Println("numbers[4:] ==", numbers[4:])
   numbers1 := make([]int, 0, 5)
   printSlice(numbers1)
-  
+  number2 := numbers[:2]
 }
