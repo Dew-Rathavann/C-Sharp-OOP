@@ -47,4 +47,7 @@ func main() {
 		close(data)
 	}()
 	d := <-done
+	if d == true {
+		fmt.Println("File written successfully")
+	}
 }
