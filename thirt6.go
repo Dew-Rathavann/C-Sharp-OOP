@@ -46,4 +46,5 @@ func main() {
 		wg.Wait()
 		close(data)
 	}()
+	d := <-done
 }
