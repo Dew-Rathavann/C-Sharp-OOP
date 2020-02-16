@@ -11,4 +11,6 @@ func main(){
 	fmt.Println("Original map: ", Map)
 	value1 := Map[90]
 	value2 := Map[94]
+	fmt.Println("Value of key[90]: ", value1)
+	
 }
