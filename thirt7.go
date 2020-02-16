@@ -12,5 +12,5 @@ func main(){
 	value1 := Map[90]
 	value2 := Map[94]
 	fmt.Println("Value of key[90]: ", value1)
-	
+	fmt.Println("Value of key[94]: ", value2)
 }
