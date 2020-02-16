@@ -13,7 +13,7 @@ func filter(stu []student, f func(student) bool) []student{
 			r = append(r, v)
 		}
 	}
-	
+	return r
 }
 func main() {
 
