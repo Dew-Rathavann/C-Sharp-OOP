@@ -8,8 +8,9 @@ func myfun(a interface{}){
 		fmt.Println("\nType: string, Value: ", a.(string))
  	case float64:
 		fmt.Println("\nType: float64, Value: ", a.(float64))
-	
-  }
+	default:
+		fmt.Println("\nType not found")
+  	}
 }
 func main() {
 
