@@ -16,5 +16,11 @@ func filter(stu []student, f func(student) bool) []student{
 	return r
 }
 func main() {
-
+	s1 := student{
+		firstName: "Fideo",
+		lastName:  "Aldaena",
+		grade:     "A",
+		country:   "Italy",
+	}
+	
 }
