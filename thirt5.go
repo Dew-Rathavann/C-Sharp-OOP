@@ -17,4 +17,8 @@ func main() {
 	}
 	fmt.Println(l, "bytes written successfully")
 	err = f.Close()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 }
