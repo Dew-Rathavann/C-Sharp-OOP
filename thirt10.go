@@ -1,5 +1,8 @@
 package main
 import "fmt"
+func printSlice(x []int){
+  
+}
 func main() {
   numbers := []int{3, 12, 9, 7, 21, 31, 4, 10, 74}
   printSlice(numbers)
