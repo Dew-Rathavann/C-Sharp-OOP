@@ -29,5 +29,11 @@ func main() {
 		country:   "USA",
 	}
 	stu := []student{s1, s2}
+	f := filter(stu, func(stu student) bool {
+		if stu.grade == "B" {
+			return true
+		}
+		return false
+	})
 	
 }
