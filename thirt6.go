@@ -31,6 +31,7 @@ func consume(data chan int, done chan bool){
 		done <- false
 		return
 	}
+	done <- true
 }
 func main() {
 
