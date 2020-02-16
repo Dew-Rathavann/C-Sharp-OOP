@@ -11,7 +11,7 @@ func produce(data chan int, wg *sync.WaitGroup) {
 	wg.Done()
 }
 func consume(data chan int, done chan bool){
-	
+	f, err := os.Create("concurrent")
 }
 func main() {
 
