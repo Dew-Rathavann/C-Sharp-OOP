@@ -34,5 +34,5 @@ func consume(data chan int, done chan bool){
 	done <- true
 }
 func main() {
-
+	data := make(chan int)
 }
