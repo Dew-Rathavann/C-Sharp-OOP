@@ -15,5 +15,5 @@ func main() {
 		f.Close()
 		return
 	}
-	
+	fmt.Println(l, "bytes written successfully")
 }
