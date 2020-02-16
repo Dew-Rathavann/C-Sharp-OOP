@@ -35,5 +35,5 @@ func main() {
 		}
 		return false
 	})
-	
+	fmt.Println(f)
 }
