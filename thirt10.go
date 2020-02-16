@@ -5,5 +5,5 @@ func main() {
   printSlice(numbers)
   fmt.Println("numbers ==", numbers)
   fmt.Println("numbers[1:4] ==", numbers[1:4])
-  
+  fmt.Println("numbers[:3] ==", numbers[:3])
 }
