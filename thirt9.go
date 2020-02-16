@@ -28,5 +28,6 @@ func main() {
 		grade:     "B",
 		country:   "USA",
 	}
+	stu := []student{s1, s2}
 	
 }
