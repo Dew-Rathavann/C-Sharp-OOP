@@ -7,6 +7,12 @@ type student struct{
 	country   string
 }
 func filter(stu []student, f func(student) bool) []student{
+	var r []student
+	for _, v := range stu {
+		if f(v) == true {
+			r = append(r, v)
+		}
+	}
 	
 }
 func main() {
