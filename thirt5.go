@@ -4,5 +4,5 @@ import (
 	"os"
 )
 func main() {
-
+	f, err := os.Create("test.txt")
 }
