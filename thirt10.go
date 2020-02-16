@@ -7,5 +7,6 @@ func main() {
   fmt.Println("numbers[1:4] ==", numbers[1:4])
   fmt.Println("numbers[:3] ==", numbers[:3])
   fmt.Println("numbers[4:] ==", numbers[4:])
+  numbers1 := make([]int, 0, 5)
   
 }
