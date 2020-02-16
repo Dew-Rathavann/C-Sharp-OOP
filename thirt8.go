@@ -15,5 +15,6 @@ func myfun(a interface{}){
 func main() {
 	myfun("Rathavann")
 	myfun(85.2)
+	myfun(12)
 	myfun(true)
 }
