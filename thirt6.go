@@ -49,5 +49,7 @@ func main() {
 	d := <-done
 	if d == true {
 		fmt.Println("File written successfully")
+	}else {
+		fmt.Println("File writing failed")
 	}
 }
