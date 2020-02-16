@@ -18,6 +18,12 @@ func consume(data chan int, done chan bool){
 	}
 	for d := range data {
 		_, err = fmt.Fprintln(f, d)
+		if err != nil {
+			fmt.Println(err)
+			f.Close()
+			done <- false
+			return
+		}
 	}
 }
 func main() {
