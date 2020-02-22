@@ -42,5 +42,5 @@ func CreateNewFile(){
 	newfile.WriteString("Hello")
 }
 func main() {
-
+	drive := getDrive()
 }
