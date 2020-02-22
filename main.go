@@ -50,19 +50,19 @@ func CreateNewFile() {
 		return
 	}
 	defer newfile.Close()
-	for _, openfile := range files {
+	for i := 0; i < len(files); i++ {
 		dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
 		if err != nil {
 			log.Fatal(err)
 		}
-		fileinfo, err = os.Stat(files)
+		fileinfo, err = os.Stat(files[i])
 		newfile.WriteString(dir)
 		newfile.WriteString(string(fileinfo.Size()))
 	}
 }
 func main() {
 	drives := getDrive()
-	fmt.Println(drives)
 	CreateNewFile()
+	fmt.Println(drives)
 	fmt.Println("New file created successfully.")
 }
