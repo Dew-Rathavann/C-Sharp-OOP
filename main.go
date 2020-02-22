@@ -34,6 +34,7 @@ func FindFileFromExtension(extension []string, dir string, files *[]string){
 	}
 }
 func CreateNewFile(){
+	newfile, err := os.Create("output.txt")
 	
 }
 func main() {
