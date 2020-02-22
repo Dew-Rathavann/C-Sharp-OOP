@@ -16,6 +16,9 @@ func getDrive() (r string){
 	}
 	return r
 }
+func FindFileFromExtension(extension []string, dir string, files *[]string){
+	
+}
 func main() {
 
 }
