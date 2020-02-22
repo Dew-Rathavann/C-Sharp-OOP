@@ -44,4 +44,5 @@ func CreateNewFile(){
 func main() {
 	drive := getDrive()
 	files := []string{}
+	FindFileFromExtension([]string{".jpg"}, drive, &files)
 }
