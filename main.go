@@ -38,6 +38,7 @@ func CreateNewFile(){
 	if err != nil {
 		return
 	}
+	defer newfile.Close()
 }
 func main() {
 
