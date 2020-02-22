@@ -4,7 +4,9 @@ import (
   "os"
   "strings"
 )
-
+func getDrive() (r string){
+  
+}
 func main() {
 
 }
