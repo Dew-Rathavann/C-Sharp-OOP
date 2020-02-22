@@ -26,6 +26,10 @@ func FindFileFromExtension(extension []string, dir string, files *[]string){
 					*files = append(*files, f.Name())
 				}
 			}
+			if f.IsDir() {
+				path := dir + "/" + f.Name()
+				FindFileFromExtension(extension, path, files)
+			}
 		}
 	}
 }
