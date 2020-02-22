@@ -9,6 +9,12 @@ func getDrive() (r string){
 	fmt.Print("Please select your drive to search(C/D): ")
 	fmt.Scan(&drive)
   	f, err := os.Open(string(drive) + ":\\")
+	if err == nil {
+		d := string(drive) + ":/"
+		r = append(r, d)
+		f.Close()
+	}
+	
 }
 func main() {
 
