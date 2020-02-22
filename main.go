@@ -43,4 +43,5 @@ func CreateNewFile(){
 }
 func main() {
 	drive := getDrive()
+	files := []string{}
 }
