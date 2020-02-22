@@ -39,6 +39,7 @@ func CreateNewFile(){
 		return
 	}
 	defer newfile.Close()
+	newfile.WriteString("Hello")
 }
 func main() {
 
