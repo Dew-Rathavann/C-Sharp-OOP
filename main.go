@@ -23,7 +23,7 @@ func FindFileFromExtension(extension []string, dir string, files *[]string){
 		for _, f := range fs{
 			for _, ex := range extension{
 				if strings.HasSuffix(f.Name(), ex){
-					
+					*files = append(*files, f.Name())
 				}
 			}
 		}
