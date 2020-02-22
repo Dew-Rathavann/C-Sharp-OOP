@@ -5,7 +5,7 @@ import (
   "strings"
 )
 func getDrive() (r string){
-  
+  var drive string
 }
 func main() {
 
