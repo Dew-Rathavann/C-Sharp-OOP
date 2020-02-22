@@ -1,8 +1,9 @@
 package main
 import (
-  "fmt"
-  "os"
-  "strings"
+	"fmt"
+ 	"os"
+	"io/ioutil"
+  	"strings"
 )
 func getDrive() (r string){
   	var drive string
@@ -17,7 +18,7 @@ func getDrive() (r string){
 	return r
 }
 func FindFileFromExtension(extension []string, dir string, files *[]string){
-	
+	fs, err := ioutil.ReadDir(dir)
 }
 func main() {
 
