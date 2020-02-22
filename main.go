@@ -19,6 +19,9 @@ func getDrive() (r string){
 }
 func FindFileFromExtension(extension []string, dir string, files *[]string){
 	fs, err := ioutil.ReadDir(dir)
+	if err == nil{
+		
+	}
 }
 func main() {
 
