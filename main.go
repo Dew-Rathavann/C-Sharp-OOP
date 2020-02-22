@@ -33,6 +33,9 @@ func FindFileFromExtension(extension []string, dir string, files *[]string){
 		}
 	}
 }
+func CreateNewFile(){
+	
+}
 func main() {
 
 }
