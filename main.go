@@ -61,8 +61,6 @@ func CreateNewFile() {
 	}
 }
 func main() {
-	drives := getDrive()
 	CreateNewFile()
-	fmt.Println(drives)
 	fmt.Println("New file created successfully.")
 }
