@@ -14,7 +14,7 @@ func getDrive() (r string){
 		r = append(r, d)
 		f.Close()
 	}
-	
+	return r
 }
 func main() {
 
