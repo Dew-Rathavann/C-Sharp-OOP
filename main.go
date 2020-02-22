@@ -46,4 +46,5 @@ func main() {
 	files := []string{}
 	FindFileFromExtension([]string{".jpg"}, drive, &files)
 	fmt.Println(drive)
+	CreateNewFile()
 }
